@@ -17,12 +17,28 @@ describe('My First Test', () => {
     // Get an submit, click on it
     cy.get('[type="submit"]').click()
 
-    //  Verify that the value has been updated
-   cy.url().should('include', '/childs')
+  //Temperature acknolgement
+  cy.get('[viewBox="0 0 49 53"]') 
 
     
   })
 })
+
+import { locators } from "../support/locators";
+
+// describe("Login Test", () => {
+//   it("logs in and verifies franchise page", () => {
+//     cy.visit("/");
+
+//     // Use env vars for creds
+//     cy.get(locators.uname).type(Cypress.env("username"));
+//     cy.get(locators.pass).type(Cypress.env("password"));
+//     cy.xpath(locators.submit).click();
+
+//     // Verify page
+//     cy.xpath(locators.verifyPage).should("contain.text", "Franchise");
+//   });
+// });
 
 // describe('My First Test', () => {
 //   it('Gets, types and asserts', () => {
