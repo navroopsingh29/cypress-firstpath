@@ -1,4 +1,4 @@
-import { locators } from "../support/locators";
+//import { locators } from "../support/locators";
 
 describe('My First Test', () => {
   it('Gets, types and asserts', () => {
