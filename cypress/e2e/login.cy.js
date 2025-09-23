@@ -1,3 +1,5 @@
+import { locators } from "../support/locators";
+
 describe('My First Test', () => {
   it('Gets, types and asserts', () => {
     cy.visit('https://test.firstpath.co/login')
@@ -24,7 +26,7 @@ describe('My First Test', () => {
   })
 })
 
-import { locators } from "../support/locators";
+
 
 // describe("Login Test", () => {
 //   it("logs in and verifies franchise page", () => {
