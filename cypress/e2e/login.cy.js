@@ -20,9 +20,9 @@ describe('My First Test', () => {
     cy.get('[type="submit"]').click()
 
   //Temperature acknolgement
-  cy.get('[viewBox="0 0 49 53"]').click()
+  cy.get('.pointer.checked').click()
 
-    
+   
   })
 })
 
