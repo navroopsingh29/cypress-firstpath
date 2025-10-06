@@ -23,9 +23,9 @@ describe('My First Test', () => {
   //Temperature acknolgement
   //cy.get('.unchecked ng-star-inserted').click()
   cy.xpath('//app-consent-form-popup//div[2]//div[2]//button[1]').click();
-Thread.sleep(2000);
+//Thread.sleep(2000);
   //Select temperature 
-cy.xpath('//*[@id="mat-select-value-1"]/span').click
+cy.xpath('//*[@id="mat-select-value-1"]/span').click()
    
   })
 })
