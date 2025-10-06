@@ -26,6 +26,10 @@ describe('My First Test', () => {
 //Thread.sleep(2000);
   //Select temperature 
 cy.xpath('//*[@id="mat-select-value-1"]/span').click()
+//Select temperature DD 
+cy.xpath('//*[@id="mat-option-0"]/span').click()
+//Submit temperature
+cy.xpath('//*[@id="modal1"]/div[3]/button').click()
    
   })
 })
