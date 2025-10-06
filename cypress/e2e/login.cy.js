@@ -1,4 +1,5 @@
-import { locators } from "../support/locators";
+//import { locators } from "../support/locators";
+require('cypress-xpath');
 
 describe('My First Test', () => {
   it('Gets, types and asserts', () => {
@@ -20,9 +21,11 @@ describe('My First Test', () => {
     cy.get('[type="submit"]').click()
 
   //Temperature acknolgement
-  cy.get('[viewBox="0 0 49 53"]').click()
-
-    
+  //cy.get('.unchecked ng-star-inserted').click()
+  cy.xpath('//app-consent-form-popup//div[2]//div[2]//button[1]').click();
+//Select temperature
+cy.xpath('//*[@id="mat-select-value-1"]/span').click
+   
   })
 })
 
