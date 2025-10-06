@@ -20,7 +20,7 @@ describe('My First Test', () => {
     cy.get('[type="submit"]').click()
 
   //Temperature acknolgement
-  cy.get('#mat-dialog-5 > app-consent-form-popup > div > div.consent-outer-wrapper > div > div.button-wrapper.text-right.flex-between > div > button:nth-child(1)').click()
+  cy.get('.unchecked ng-star-inserted').click()
 
    
   })
